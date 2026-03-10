@@ -10,7 +10,7 @@ model = ChatOpenAI(model="gpt-4o-mini", api_key=OPENAI_API_KEY)
 
 
 st.header("🤖  Srijanbot 👨‍💻", divider="rainbow")
-st.markdown('#### A chatbot powered by: GPT-4o-mini')
+st.markdown("###### A chatbot powered by: GPT-4o-mini")
 
 if "chat_history" not in st.session_state:
     st.session_state.chat_history = []
