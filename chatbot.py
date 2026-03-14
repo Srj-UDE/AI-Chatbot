@@ -21,7 +21,7 @@ if st.session_state.chat_active:
         with st.chat_message(msg["role"]):
             st.write(msg["content"])
     if prompt := st.chat_input("Your Query [Press 'e' to exit]"):
-        if prompt == 'e':
+        if prompt.lower() == 'e':
             st.session_state.chat_active = False
             st.error("👋 Chat ended!") 
             time.sleep(2.5)
